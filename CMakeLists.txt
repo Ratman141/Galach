@@ -12,11 +12,11 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 SET(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib)
 
-add_library(LEXER src/include/lexer.cpp)
+add_library(LEXER src/lexer.cpp)
 set_target_properties(LEXER PROPERTIES PREFIX "")
 target_include_directories(LEXER PUBLIC src/include)
 
-add_library(INTERPRETER src/include/interpreter.cpp)
+add_library(INTERPRETER src/interpreter.cpp)
 set_target_properties(INTERPRETER PROPERTIES PREFIX "")
 target_include_directories(INTERPRETER PUBLIC src/include)
 

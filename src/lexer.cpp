@@ -1,8 +1,8 @@
-#include "lexer.h"
+#include "include/lexer.h"
 
 #include <stdexcept>
 
-std::vector<std::string> split(const std::string& source, const std::string delim){
+std::vector<std::string> Lexer::split(const std::string& source, const std::string& delim){
     std::vector<std::string> src;
     size_t start = 0, pos;
     if(delim == ""){
