@@ -65,6 +65,18 @@ std::vector<Token> Lexer::tokenize(){
             tokens.push_back(token);
             src.pop_front();
         }
+        else if(src[0] == "("){
+            token.line = line;
+            token.type = TokenType::L_PAREN;
+            tokens.push_back(token);
+            src.pop_front();
+        }
+        else if(src[0] == ")"){
+            token.line = line;
+            token.type = TokenType::R_PAREN;
+            tokens.push_back(token);
+            src.pop_front();
+        }
         else 
             throw std::runtime_error("Unexpected token: " + src[0] + ", line: " + std::to_string(token.line));
     }

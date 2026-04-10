@@ -1,0 +1,1 @@
+G A ( C G ) H AA H ( A H )

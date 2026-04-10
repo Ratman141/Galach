@@ -11,6 +11,8 @@ enum class TokenType{
     A_TOKEN,        // Add 1
     C_TOKEN,        // Sub 1
     H_TOKEN,        // Print
+    L_PAREN,
+    R_PAREN,
     EOF_TOKEN
 };
 

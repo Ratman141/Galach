@@ -20,7 +20,17 @@ void Interpreter::run(){
             memory[pointer]--;
         }
         else if(token.type == TokenType::H_TOKEN){
-            std::cout<<memory[pointer];
+            std::cout<<static_cast<int>(memory[pointer]);
+        }
+        else if(token.type == TokenType::L_PAREN){
+            loop_data = pointer;
+            loop_index = i;
+        }
+        else if(token.type == TokenType::R_PAREN){
+            if(memory[loop_data] != 0){
+                i = loop_index;
+                continue;
+            }
         }
         i++;
     }
