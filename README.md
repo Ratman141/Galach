@@ -1,5 +1,5 @@
 # Galach
-Galach is simple brainf*ck-like language that doesn't have loops.
+Galach is simple brainf*ck-like language.
 
 # Keywords:
 G - memory pointer goes up.  
