@@ -1,4 +1,4 @@
-# Galach
+# GALACH
 Galach is simple brainf*ck-like language.
 
 # Keywords:
